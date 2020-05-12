@@ -4,6 +4,15 @@ namespace E3
 {
     class Program
     {
+        static void Main(string[] args)
+        {
+            int num=0;
+            Console.WriteLine("ingrese un numero");
+            num=Int32.Parse(Console.ReadLine());
+            Console.WriteLine(par(num));
+            Console.WriteLine(primo(num));  
+        }
+        
         void par(int num)
         {
             if (num % 2 == 0)
@@ -30,14 +39,5 @@ namespace E3
                 Console.WriteLine("el numero es primo");
             }
         }
-        static void Main(string[] args)
-        {
-            int num=0;
-            Console.WriteLine("ingrese un numero");
-            num=Int32.Parse(Console.ReadLine());
-            par(num);
-            primo(num);
-        }
-
     }
 }
